@@ -1,12 +1,21 @@
 /* FontFamily */
-$base-font-family: "";
-$second-font-family: "";
 
+$base-font-family: 'Yu Mincho Light',
+'YuMincho',
+'Yu Mincho',
+'游明朝体',
+sans-serif;
+$second-font-family: 'Lora',
+serif;
+$third-font-family: 'Allura',
+cursive;
 body {
-  font-family: $base-font-family;
+    font-family: $base-font-family;
 }
 
+
 /* font-weight */
+
 $regular: 300;
 $normal: 400;
 $bold: 700;
