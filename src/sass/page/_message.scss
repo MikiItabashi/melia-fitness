@@ -1,0 +1,35 @@
+.message {
+    margin-bottom: rem(80);
+    @include mq('md') {
+        margin-bottom: rem(96);
+    }
+}
+
+.message__box {
+    border: 1px solid $color-main;
+    padding: rem(24) rem(20);
+    @include mq('md') {
+        padding: rem(64) rem(89);
+    }
+}
+
+.message__heading {
+    font-family: $third-font-family;
+    font-size: rem(40);
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: $color-main;
+    text-align: center;
+    @include mq('md') {
+        font-size: rem(56);
+    }
+}
+
+.message__text {
+    margin-top: rem(16);
+    line-height: calc(29 / 16);
+    @include mq('md') {
+        margin-top: rem(40);
+        line-height: calc(32 / 16);
+    }
+}

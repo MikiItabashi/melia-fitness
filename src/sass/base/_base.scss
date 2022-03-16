@@ -40,6 +40,10 @@ a {
 }
 
 body {
-    font-size: rem(14);
+    font-size: rem(16);
     line-height: calc(24 / 16);
+    font-weight: 400;
+    background: $color-white;
+    color: $color-text;
+    @include mq('md') {}
 }

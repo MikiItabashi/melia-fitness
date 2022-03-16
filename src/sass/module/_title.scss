@@ -1,0 +1,27 @@
+.title {
+    text-align: center;
+}
+
+.title__en {
+    font-family: $second-font-family;
+    text-transform: uppercase;
+    font-size: rem(28);
+    line-height: calc(42 / 28);
+    letter-spacing: 0.005em;
+    @include mq('md') {
+        font-size: rem(56);
+        line-height: 1;
+        letter-spacing: 0.008em;
+    }
+}
+
+.title__ja {
+    font-size: rem(14);
+    line-height: calc(21 / 14);
+    letter-spacing: 0.01em;
+    @include mq('md') {
+        margin-top: rem(40);
+        font-size: rem(16);
+        line-height: 1;
+    }
+}

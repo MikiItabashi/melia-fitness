@@ -17,7 +17,7 @@
 
 /* FontFamily */
 body {
-  font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
+  font-family: "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
 }
 
 /* font-weight */
@@ -66,9 +66,12 @@ a {
 }
 
 body {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
+  font-weight: 400;
+  background: #fff;
+  color: #393327;
 }
 
 *,
@@ -199,6 +202,24 @@ select::-ms-expand {
   display: none;
 }
 
+.heading {
+  color: #8B6C3A;
+  font-weight: 600;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+  }
+}
+
 .l-inner {
   width: 100%;
   padding-right: 20px;
@@ -213,5 +234,550 @@ select::-ms-expand {
     max-width: 1110px;
     padding-right: 25px;
     padding-left: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .l-inner--slim {
+    max-width: 880px;
+  }
+}
+
+.sns__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sns__item {
+  color: #fff;
+}
+
+.sns__item:not(:last-child) {
+  margin-right: 24px;
+  margin-right: 1.5rem;
+}
+
+.sns__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  width: 2.5rem;
+  height: 40px;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #393327;
+}
+
+.title {
+  text-align: center;
+}
+
+.title__en {
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+}
+
+@media screen and (min-width: 768px) {
+  .title__en {
+    font-size: 3.5rem;
+    line-height: 1;
+    letter-spacing: 0.008em;
+  }
+}
+
+.title__ja {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+@media screen and (min-width: 768px) {
+  .title__ja {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+.message {
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .message {
+    margin-bottom: 6rem;
+  }
+}
+
+.message__box {
+  border: 1px solid #8B6C3A;
+  padding: 24px 20px;
+  padding: 1.5rem 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .message__box {
+    padding: 4rem 5.5625rem;
+  }
+}
+
+.message__heading {
+  font-family: "Allura", cursive;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #8B6C3A;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .message__heading {
+    font-size: 3.5rem;
+  }
+}
+
+.message__text {
+  margin-top: 16px;
+  margin-top: 1rem;
+  line-height: 1.8125;
+}
+
+@media screen and (min-width: 768px) {
+  .message__text {
+    margin-top: 2.5rem;
+    line-height: 2;
+  }
+}
+
+.mv {
+  background-image: url(../images/mv-bg-sp.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .mv {
+    background-image: url(../images/mv-bg.jpg);
+  }
+}
+
+.mv__content {
+  padding-top: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 400px;
+  padding-bottom: 25rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .mv__content {
+    padding-top: 14rem;
+    padding-bottom: 17rem;
+    text-align: left;
+  }
+}
+
+.mv__main {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.63636;
+}
+
+@media screen and (min-width: 768px) {
+  .mv__main {
+    font-size: 2rem;
+    line-height: 1.875;
+  }
+}
+
+.mv__main .strong {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .mv__main .strong {
+    font-size: 2.5rem;
+  }
+}
+
+.mv__main .small {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .mv__main .small {
+    font-size: 2rem;
+  }
+}
+
+.mv__lead {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .mv__lead {
+    margin-top: 2rem;
+    font-size: 1.375rem;
+    line-height: 1.5;
+  }
+}
+
+.problem {
+  background: #FAFAFA;
+}
+
+@media screen and (min-width: 768px) {
+  .problem {
+    background-image: url(../images/depressed-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.problem__body {
+  padding-top: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 56px;
+  padding-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .problem__body {
+    padding-top: 6.125rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.problem__heading {
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 0.005em;
+}
+
+@media screen and (min-width: 768px) {
+  .problem__heading {
+    font-size: 1.5rem;
+  }
+}
+
+.problem__items {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .problem__items {
+    margin-top: 2rem;
+  }
+}
+
+.problem__item {
+  position: relative;
+  padding-left: 32px;
+  padding-left: 2rem;
+  letter-spacing: 0.002em;
+}
+
+.problem__item:not(:last-child) {
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+
+@media screen and (min-width: 768px) {
+  .problem__item:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.problem__item::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  width: 1.5rem;
+  height: 24px;
+  height: 1.5rem;
+  left: 0;
+  top: 0;
+  background-image: url(../images/ph_check-square-offset-thin.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.profile {
+  padding-top: 96px;
+  padding-top: 6rem;
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.profile__body {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .profile__body {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.profile__img {
+  width: 100%;
+  position: relative;
+}
+
+.profile__img::before {
+  padding-top: 100%;
+  display: block;
+  content: "";
+}
+
+.profile__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .profile__img {
+    width: 22.5rem;
+  }
+}
+
+.profile__content {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .profile__content {
+    margin-top: 0;
+    margin-left: 5.625rem;
+    width: calc(100% - 28.125rem);
+  }
+}
+
+.profile__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__name {
+  font-weight: 600;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.profile__text {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  line-height: 1.8125;
+}
+
+@media screen and (min-width: 768px) {
+  .profile__text {
+    margin-top: 2rem;
+    line-height: 2;
+  }
+}
+
+.voice {
+  padding-top: 56px;
+  padding-top: 3.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .voice {
+    padding-top: 6rem;
+  }
+}
+
+.voice__items {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .voice__items {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .voice__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.voice__item:not(:last-child) {
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .voice__item:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .voice__item:nth-child(2n + 1) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.voice__img {
+  width: 100%;
+  position: relative;
+}
+
+.voice__img::before {
+  padding-top: 66.8656%;
+  display: block;
+  content: "";
+}
+
+.voice__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .voice__img {
+    width: 28.125rem;
+  }
+}
+
+.voice__content {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .voice__content {
+    width: calc(100% - 34.0625rem);
+  }
+}
+
+.voice__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+}
+
+@media screen and (min-width: 768px) {
+  .voice__title {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+  }
+}
+
+.voice__text {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  line-height: 1.8125;
+  letter-spacing: 0.002em;
+}
+
+@media screen and (min-width: 768px) {
+  .voice__text {
+    margin-top: 1.25rem;
+    line-height: 2;
+    letter-spacing: 0.005em;
+  }
+}
+
+.voice__info {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 0.005em;
+}
+
+@media screen and (min-width: 768px) {
+  .voice__info {
+    text-align: right;
+    margin-top: 1.0625rem;
+    font-size: 1rem;
   }
 }

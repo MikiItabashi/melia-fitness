@@ -12,3 +12,9 @@
         padding-left: $padding-pc;
     }
 }
+
+.l-inner--slim {
+    @include mq('md') {
+        max-width: $inner-slim;
+    }
+}

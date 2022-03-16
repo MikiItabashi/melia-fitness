@@ -1,0 +1,25 @@
+.sns {}
+
+.sns__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sns__item {
+    color: $color-white;
+}
+
+.sns__item:not(:last-child) {
+    margin-right: rem(24);
+}
+
+.sns__item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(40);
+    height: rem(40);
+    border-radius: 50%;
+    background: $color-text;
+}
