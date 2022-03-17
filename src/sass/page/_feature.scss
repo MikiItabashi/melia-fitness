@@ -1,0 +1,122 @@
+.feature {
+    padding-top: rem(48);
+    padding-bottom: rem(56);
+    @include mq('md') {
+        padding-top: rem(96);
+        padding-bottom: rem(96);
+    }
+}
+
+.feature__inner {}
+
+.feature__heading {
+    position: relative;
+    padding-bottom: rem(60);
+    @include mq('md') {
+        padding-bottom: rem(120);
+    }
+}
+
+.feature__heading::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX( -50%);
+    background-image: url(../images/feature-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(43);
+    height: rem(21);
+    @include mq('md') {
+        width: rem(80);
+        height: rem(41);
+    }
+}
+
+.feature__title {
+    margin-top: rem(32);
+    @include mq('md') {
+        margin-top: rem(75);
+    }
+}
+
+.feature__items {
+    margin-top: rem(40);
+    @include mq('md') {
+        margin-top: rem(80);
+    }
+}
+
+.feature__item {
+    @include mq('md') {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.feature__item:not(:last-child) {
+    margin-bottom: rem(40);
+    @include mq('md') {
+        margin-bottom: rem(80);
+    }
+}
+
+.feature__img {
+    width: 100%;
+    position: relative;
+    &::before {
+        padding-top: 73.432%;
+        display: block;
+        content: "";
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        object-position: center;
+    }
+    @include mq('md') {
+        width: 42%;
+    }
+}
+
+.feature__content {
+    margin-top: rem(20);
+    @include mq('md') {
+        padding-left: rem(70);
+        width: 58%;
+        margin-top: 0;
+    }
+}
+
+.feature__sub-title {
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: calc(32 / 18);
+    letter-spacing: 0.005em;
+    padding: 0 rem(8);
+    border-left: 1px solid $color-main;
+    @include mq('md') {
+        font-size: rem(28);
+        line-height: calc(50 / 28);
+        letter-spacing: 0.01em;
+        padding: 0 rem(20);
+    }
+}
+
+.feature__text {
+    margin-top: rem(12);
+    font-size: rem(16);
+    line-height: calc(29 / 16);
+    @include mq('md') {
+        margin-top: rem(32);
+        font-size: rem(16);
+        line-height: calc(32 / 16);
+    }
+}

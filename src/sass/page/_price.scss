@@ -1,0 +1,49 @@
+.price {
+    background-image: url(../images/price-bg-sp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: rem(56);
+    padding-bottom: rem(56);
+    text-align: center;
+}
+
+.price__inner {}
+
+.price__title {}
+
+.price__price {
+    margin-top: rem(40);
+    text-align: center;
+    img {
+        margin: 0 auto;
+        max-width: rem(260);
+        @include mq('md') {
+            max-width: rem(450);
+        }
+    }
+}
+
+.price__main {
+    margin-top: rem(32);
+    color: $color-main;
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: calc(24 / 18);
+    letter-spacing: 0.01em;
+}
+
+.price__sub {
+    margin-top: rem(8);
+    color: $color-main;
+    font-size: rem(14);
+    line-height: calc(21 / 14);
+    letter-spacing: 0.01em;
+}
+
+.price__notes {
+    margin-top: rem(33);
+    font-size: rem(16);
+    line-height: calc(27 / 16);
+    letter-spacing: 0.002em;
+}
