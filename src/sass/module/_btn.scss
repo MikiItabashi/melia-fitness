@@ -1,0 +1,35 @@
+.btn {
+    display: inline-block;
+    color: $color-white;
+    letter-spacing: 0.005em;
+    padding: rem(20) rem(33);
+    background: linear-gradient(265.98deg, $color-main 23.24%, #B19464 55.28%, $color-main 85.32%, $color-main 85.32%);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+    border-radius: rem(2);
+    font-weight: 600;
+    line-height: 1;
+    @include mq('md') {
+        padding: rem(27) rem(82) rem(25) rem(68);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+        border-radius: 2px;
+        font-size: rem(28);
+        letter-spacing: 0.02em;
+        position: relative;
+    }
+}
+
+.btn::before {
+    @include mq('md') {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: rem(18);
+        height: rem(18);
+        margin: 0 rem(10);
+        border-top: 1px solid $color-white;
+        border-right: 1px solid $color-white;
+        top: 50%;
+        right: rem(37);
+        transform: translateY(-50%) rotate(45deg);
+    }
+}

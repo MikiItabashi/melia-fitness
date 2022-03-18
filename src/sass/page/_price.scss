@@ -6,6 +6,10 @@
     padding-top: rem(56);
     padding-bottom: rem(56);
     text-align: center;
+    @include mq('md') {
+        padding-top: rem(96);
+        padding-bottom: rem(96);
+    }
 }
 
 .price__inner {}
@@ -18,7 +22,10 @@
     img {
         margin: 0 auto;
         max-width: rem(260);
-        @include mq('md') {
+    }
+    @include mq('md') {
+        margin-top: rem(80);
+        img {
             max-width: rem(450);
         }
     }
@@ -31,6 +38,11 @@
     font-size: rem(18);
     line-height: calc(24 / 18);
     letter-spacing: 0.01em;
+    @include mq('md') {
+        margin-top: rem(36);
+        font-size: rem(24);
+        line-height: calc(36 / 24);
+    }
 }
 
 .price__sub {
@@ -39,6 +51,11 @@
     font-size: rem(14);
     line-height: calc(21 / 14);
     letter-spacing: 0.01em;
+    @include mq('md') {
+        margin-top: rem(32);
+        font-size: rem(16);
+        line-height: calc(24 / 18);
+    }
 }
 
 .price__notes {
@@ -46,4 +63,9 @@
     font-size: rem(16);
     line-height: calc(27 / 16);
     letter-spacing: 0.002em;
+    @include mq('md') {
+        margin-top: rem(32);
+        font-size: rem(24);
+        line-height: calc(36 / 24);
+    }
 }

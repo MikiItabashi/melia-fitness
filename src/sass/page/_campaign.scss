@@ -1,0 +1,154 @@
+.campaign {
+    background-image: url(../images/campaign-bg-sp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: rem(56);
+    padding-bottom: rem(56);
+    @include mq('md') {
+        background-image: url(../images/campaign-bg-pc.jpg);
+    }
+}
+
+.campaign__inner {}
+
+.campaign__box {
+    background: $color-white;
+    border: 1px solid $color-main;
+    padding: rem(40) rem(10);
+}
+
+.campaign__title {
+    color: $color-main;
+    font-weight: 600;
+    font-size: rem(20);
+    line-height: 1;
+    letter-spacing: 0.005em;
+    padding: rem(12) 0;
+    text-align: center;
+    border-top: 1px solid $color-main;
+    border-bottom: 1px solid $color-main;
+}
+
+.campaign__content {
+    padding: rem(78) rem(47) 0;
+    position: relative;
+}
+
+.campaign__note {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: rem(24);
+    right: 0;
+    color: $color-main;
+    padding: rem(7) rem(10);
+    font-size: rem(14);
+    line-height: 1;
+    letter-spacing: 0.005em;
+    z-index: 1;
+    color: $color-main;
+}
+
+.campaign__note span::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: $color-white;
+    border: 2px solid $color-main;
+    transform: skewX(-15deg);
+    z-index: -1;
+}
+
+.campaign__note::before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: $color-white transparent;
+    border-width: 25px 26px 0 0;
+    bottom: rem(-17);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.campaign__note::after {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 0;
+    border-style: solid;
+    border-color: $color-main transparent;
+    border-width: 25px 25px 0 0;
+    bottom: rem(-20);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.campaign__heading {
+    letter-spacing: 0.015em;
+}
+
+.campaign__price {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(10);
+}
+
+.campaign__before {
+    letter-spacing: 0.005em;
+    position: relative;
+    margin-right: rem(47);
+}
+
+.campaign__before::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/campaign-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(24);
+    height: rem(26);
+    right: rem(-34);
+}
+
+.campaign__before .strong {
+    font-size: rem(24);
+    line-height: calc(36 / 24);
+}
+
+.campaign__after {
+    color: $color-main;
+    font-size: rem(40);
+    line-height: 1;
+    letter-spacing: -0.5em;
+}
+
+.campaign__after .strong {
+    font-size: rem(72);
+}
+
+.campaign__period {
+    margin-top: rem(20);
+    white-space: nowrap;
+}
+
+.campaign__period .heading {
+    display: inline-block;
+    margin-bottom: rem(10);
+    font-size: rem(14);
+    line-height: calc(21 / 14);
+    letter-spacing: 0.005em;
+    padding: rem(5) rem(6);
+    border: 1px solid $color-text;
+}
+
+.campaign__btn {
+    margin-top: rem(32);
+    text-align: center;
+}
