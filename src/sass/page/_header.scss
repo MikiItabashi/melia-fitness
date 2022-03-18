@@ -1,0 +1,73 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background: $color-white;
+    height: rem(68);
+    z-index: 10;
+    @include mq('md') {
+        height: rem(120);
+    }
+}
+
+.header__inner {
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+}
+
+.header__nav {
+    height: inherit;
+}
+
+.header__items {
+    height: inherit;
+    display: flex;
+}
+
+.header__item {
+    height: inherit;
+}
+
+.header__item+.header__item {
+    margin-left: rem(32);
+}
+
+.header__item a {
+    display: inline-block;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    font-size: rem(15);
+    font-family: $second-font-family;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    @include mq('md') {
+        &:hover {
+            opacity: 1;
+            color: $color-main;
+        }
+    }
+}
+
+.header__logo {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: rem(76);
+    @include mq('md') {
+        max-width: rem(130);
+        margin: 0 rem(23);
+    }
+}
+
+.header__btn {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin-right: rem(50);
+    @include mq('md') {
+        margin-left: rem(57);
+        margin-right: 0;
+    }
+}

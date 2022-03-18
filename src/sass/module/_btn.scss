@@ -33,3 +33,18 @@
         transform: translateY(-50%) rotate(45deg);
     }
 }
+
+.btn--small {
+    font-size: rem(14);
+    letter-spacing: 0.002em;
+    padding: rem(12) rem(28);
+    box-shadow: none;
+    @include mq('md') {
+        font-size: rem(16);
+        padding: rem(17) rem(40);
+    }
+}
+
+.btn--small::before {
+    display: none;
+}

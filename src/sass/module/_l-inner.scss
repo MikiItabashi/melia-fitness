@@ -18,3 +18,10 @@
         max-width: $inner-slim;
     }
 }
+
+.l-inner--header {
+    max-width: 100%;
+    @include mq('md') {
+        max-width: $inner + strip-unit($padding-pc) * 2;
+    }
+}

@@ -32,7 +32,89 @@
 </head>
 
 <body>
-    <header class="header"></header>
+    <header class="header">
+        <div class="header__inner l-inner l-inner--header">
+            <nav class="header__nav u-desktop">
+                <ul class="header__items">
+                    <li class="header__item">
+                        <a href="#profile">owner's profile</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#feature">feature</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#voice">member's voice</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__logo">
+                <img src="assets/images/logo.svg" alt="MELIA FITNESS">
+            </div>
+            <nav class="header__nav u-desktop">
+                <ul class="header__items">
+                    <li class="header__item">
+                        <a href="#price">price</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#faq">Q&A</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#access">access</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__btn">
+                <a href="#" class="btn btn--small">LINE予約</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="drawer-menu js-globalMenuSp">
+        <ul id="menu">
+            <li class="drawer-menu__link">
+                <a href="#">top</a>
+            </li>
+            <li class="drawer-menu__link">
+                <a href="#profile">owner's profile</a>
+            </li>
+            <li class="drawer-menu__link">
+                <a href="#feature">feature</a>
+            </li>
+            <li class="drawer-menu__link">
+                <a href="#voice">member's voice</a>
+            </li>
+            <li class="drawer-menu__link">
+                <a href="#price">price</a>
+            </li>
+            <li class="drawer-menu__link">
+                <a href="#faq">Q&A</a>
+            </li>
+            <li class="drawer-menu__link">
+                <a href="#access">access</a>
+            </li>
+        </ul>
+        <div class="drawer-menu__sns sns">
+            <ul class="sns__items">
+                <li class="sns__item">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="sns__item">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="sns__item">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="drawer-menu__background"></div>
+
     <div class="mv">
         <div class="mv__inner l-inner">
             <div class="mv__content">
@@ -81,7 +163,7 @@
         </div>
     </section>
 
-    <section class="profile">
+    <section id="profile" class="profile">
         <div class="profile__inner l-inner l-inner--slim">
             <div class="profile__title title">
                 <p class="title__en">owner's profile</p>
@@ -114,7 +196,7 @@
         </div>
     </section>
 
-    <section class="message">
+    <section id="message" class="message">
         <div class="message__inner l-inner l-inner--slim">
             <div class="message__box">
                 <h2 class="message__heading">Message</h2>
@@ -124,7 +206,7 @@
         </div>
     </section>
 
-    <section class="problem">
+    <section id="problem" class="problem">
         <div class="problem__img u-mobile">
             <img src="assets/images/depressed-bg-sp.jpg" alt="女性が悩んでいる写真">
         </div>
@@ -142,7 +224,7 @@
         </div>
     </section>
 
-    <section class="feature">
+    <section id="feature" class="feature">
         <div class="feature__inner l-inner">
             <div class="feature__heading heading">MELIA FITNESSは<br class="u-mobile">そんな悩みをお持ちの方にこそ<br> ご利用していただきたい理由があります。
             </div>
@@ -204,12 +286,12 @@
 
     <picture>
         <source srcset="assets/images/yoga-pc.png" media="(min-width: 768px)" />
-        <img src="assets/images/yoga-sp.png" alt="サンプル画像" />
+        <img src="assets/images/yoga-sp.png" alt="ジムの画像" />
     </picture>
 
-    <section class="member-voice">
+    <section id="voice" class="member-voice">
         <div class="member-voice__inner l-inner">
-            <div class="member-voice__title">
+            <div class="member-voice__title title title--left">
                 <p class="title__en">member's voice</p>
                 <h2 class="title__ja">会員様の声</h2>
             </div>
@@ -248,7 +330,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section id="price" class="price">
         <div class="price__inner l-inner">
             <div class="price__title title">
                 <p class="title__en">price</p>
@@ -285,6 +367,180 @@
             </div>
         </div>
     </section>
+
+    <section id="flow" class="flow">
+        <div class="flow__inner l-inner">
+            <div class="flow__title title title--left">
+                <p class="title__en">flow</p>
+                <h2 class="title__ja">パーソナルトレーニングの流れ</h2>
+            </div>
+            <div class="flow__items">
+                <div class="flow__item">
+                    <div class="flow__img">
+                        <img src="assets/images/flow01.jpg" alt="カウンセリングの写真">
+                    </div>
+                    <div class="flow__content">
+                        <p class="flow__step">step01</p>
+                        <p class="flow__sub-title">カウンセリング</p>
+                        <p class="flow__text">まずはカウンセリングでお体の状態やライフスタイルをお伺いし、今後の流れをご説明いたします。</p>
+                    </div>
+                </div>
+                <div class="flow__item">
+                    <div class="flow__img">
+                        <img src="assets/images/flow02.jpg" alt="測定器の写真">
+                    </div>
+                    <div class="flow__content">
+                        <p class="flow__step">step02</p>
+                        <p class="flow__sub-title">測定・メニュー提案</p>
+                        <p class="flow__text">体組成計で現在の身体の状態を確認します。その後、理想の身体になるためのトレーニングメニューをご提案させていただきます。</p>
+                    </div>
+                </div>
+                <div class="flow__item">
+                    <div class="flow__img">
+                        <img src="assets/images/flow03.jpg" alt="トレーニング中の写真">
+                    </div>
+                    <div class="flow__content">
+                        <p class="flow__step">step03</p>
+                        <p class="flow__sub-title">トレーニング</p>
+                        <p class="flow__text">専属のトレーナーがマンツーマンであなたのなりたい身体に合わせたトレーニングをサポートいたします。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="faq__inner l-inner l-inner--slim">
+            <div class="faq__title title">
+                <p class="title__en">Q&A</p>
+                <h2 class="title__ja">よくあるご質問</h2>
+            </div>
+            <div class="faq__items">
+                <div class="faq__item">
+                    <div class="faq__q">ダイエットをしたいのですが、どれくらいの効果がありますか？</div>
+                    <div class="faq__a">個人差はありますが、週に1回のパーソナルトレーニングと自宅でのトレーニング、食生活を改善することで、２か月で効果を感じていただくことができます。</div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__q">運動をしたことがなく、体力に自信がありません。大丈夫でしょうか？</div>
+                    <div class="faq__a">MELIA FITNESSは専属のトレーナーがマンツーマンでトレーニングのサポートをしております。また、無理なトレーニングはしないため、運動をしたことがなく、体力に自信がない方でも安心して取り組んでいただけます。</div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__q">リバウンドはしませんか？</div>
+                    <div class="faq__a">リバウンドの原因は筋肉が落ちて基礎代謝が下がってしまうことが原因であると考えられています。<br> MELIA FITNESSのプログラムでは、確実に筋肉をつけられますので、リバウンドしにくい体になれます。</div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__q">厳しい食事制限をする自信がありません。</div>
+                    <div class="faq__a">MELIA FITNESSでは食事の選び方や食べ方など食事改善についてアドバイスを行っております。<br> 厳しい食事制限はありませんのでご安心ください。
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__q">トレーニングの際に必要なものはありますか？</div>
+                    <div class="faq__a">トレーニングウェアとトレーニング時に使用するシューズをおもちください。<br> お持ちでない場合はレンタルをご用意しておりますのでご利用ください。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <picture>
+        <source srcset="assets/images/gym-pc.jpg" media="(min-width: 768px)" />
+        <img src="assets/images/gym-sp.jpg" alt="ジムの画像" />
+    </picture>
+
+    <section id="access" class="access">
+        <div class="access__inner l-inner">
+            <div class="access__title title title--left">
+                <p class="title__en">access</p>
+                <h2 class="title__ja">アクセス</h2>
+            </div>
+            <div class="access__body">
+                <div class="access__content">
+                    <p class="access__name">MELIA FITNESS</p>
+                    <p class="access__name-ja">パーソナルトレーニングジム メリアフィットネス</p>
+                    <p class="access__address">〒170-6045<br>東京都豊島区東池袋3-1-1 サンシャイン60 45階</p>
+                    <p class="access__station">JR池袋駅より徒歩５分</p>
+                    <p class="access__tel">TEL 00-0000-0000</p>
+                    <p class="access__time">営業時間　10：00～22：00</p>
+                </div>
+                <div class="access__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.9100549422355!2d139.71840341591863!3d35.72843053498822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6e151763a1%3A0xb6d351bec96b4a92!2z44CSMTcwLTg2MzAg5p2x5Lqs6YO96LGK5bO25Yy65p2x5rGg6KKL77yT5LiB55uu77yR4oiS77yRIDQ16ZqO!5e0!3m2!1sja!2sjp!4v1647591950056!5m2!1sja!2sjp"
+                        width="520" height="390" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="campaign">
+        <div class="campaign__inner l-inner">
+            <div class="campaign__box">
+                <h2 class="campaign__title">期間限定無料体験キャンペーン</h2>
+                <div class="campaign__content">
+                    <p class="campaign__note"><span>先着10名様限定</span></p>
+                    <p class="campaign__heading">体験コース　1回60分</p>
+                    <div class="campaign__price">
+                        <p class="campaign__before">通常価格<br><span class="strong">¥12,000</span><span class="u-desktop">税込</span></p>
+                        <p class="campaign__after">￥<span class="strong">０</span></p>
+                    </div>
+                    <p class="campaign__period"><span class="heading">キャンペーン期間</span><br class="u-mobile">12月1日（月）～12月30日（金）</p>
+                </div>
+                <div class="campaign__btn">
+                    <a href="#" class="btn">２分で完了！LINEで予約する</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner l-inner">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <img src="assets/images/logo.svg" alt="MELIA FITNESS">
+                </div>
+                <div class="footer__main">
+                    <nav class="footer__nav">
+                        <ul class="footer__items">
+                            <li class="footer__item">
+                                <a href="#profile">owner's profile</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#feature">feature</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#voice">member's voice</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#price">price</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#faq">Q&A</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#access">access</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__sns sns">
+                        <ul class="sns__items">
+                            <li class="sns__item">
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li class="sns__item">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="sns__item">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__text">このサイトはMELINDA様のご協力のもと作成したコーディング用の練習課題です。実在の人物・団体とは関係ありません。</div>
+                <small class="footer__copyright">&copy; 2021 MELIA FITNESS</small>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

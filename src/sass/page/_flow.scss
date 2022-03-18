@@ -1,0 +1,89 @@
+.flow {
+    background: $color-base;
+    padding-top: rem(56);
+    padding-bottom: rem(56);
+    @include mq('md') {
+        padding-top: rem(96);
+        padding-bottom: rem(96);
+    }
+}
+
+.flow__inner {}
+
+.flow__title {}
+
+.flow__items {
+    margin-top: rem(40);
+    @include mq('md') {
+        margin-top: rem(80);
+        display: flex;
+    }
+}
+
+.flow__item {
+    @include mq('md') {
+        width: calc((100% - #{rem(40)} * 2) / 3);
+    }
+}
+
+.flow__item+.flow__item {
+    margin-bottom: rem(40);
+    @include mq('md') {
+        margin-bottom: 0;
+        margin-left: rem(80);
+    }
+}
+
+.flow__img {
+    width: 100%;
+    position: relative;
+    &::before {
+        padding-top: 100%;
+        display: block;
+        content: "";
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.flow__content {
+    margin-top: rem(24);
+}
+
+.flow__step {
+    text-transform: uppercase;
+    color: $color-main;
+    font-size: rem(16);
+    letter-spacing: 0.01em;
+}
+
+.flow__sub-title {
+    font-size: rem(16);
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: calc(27 / 18);
+    letter-spacing: 0.005em;
+    @include mq('md') {
+        font-size: rem(22);
+        line-height: 1;
+        letter-spacing: 0.01em;
+    }
+}
+
+.flow__text {
+    margin-top: rem(8);
+    font-size: rem(16);
+    line-height: calc(29 / 16);
+    letter-spacing: 0.002em;
+    @include mq('md') {
+        letter-spacing: 0.005em;
+    }
+}

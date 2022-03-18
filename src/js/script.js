@@ -1,50 +1,40 @@
+jQuery(function($) { // この中であればWordpressでも「$」が使用可能になる
 
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+    // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
-  var topBtn = $('.pagetop');
-  topBtn.hide();
+    $(document).on('click', 'a[href*="#"]', function() {
+        let time = 400;
+        let header = $('header').innerHeight();
+        let target = $(this.hash);
+        if (!target.length) return;
+        let targetY = target.offset().top - header;
+        $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+        return false;
+    });
 
-  // ボタンの表示設定
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
-      // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
-    } else {
-      // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
-    }
-  });
+    // ドロワーメニュー
+    $(function() {
+        $('.js-hamburger').click(function() {
+            $(this).toggleClass('active')
 
-  // ボタンをクリックしたらスクロールして上に戻る
-  topBtn.click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 300, 'swing');
-    return false;
-  });
+            if ($(this).hasClass('active')) {
+                $('.js-globalMenuSp').addClass('active')
+            } else {
+                $('.js-globalMenuSp').removeClass('active')
+            }
+        })
+    })
 
-  //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
+    // ページ内リンクに飛ぶ時にリンククリックしたらハンバーガーメニューが閉じるように
+    $('#menu a[href]').on('click', function(event) {
+        $('.js-hamburger').trigger('click')
+    });
 
-  });
-
-
-
-  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-
-  $(document).on('click', 'a[href*="#"]', function () {
-    let time = 400;
-    let header = $('header').innerHeight();
-    let target = $(this.hash);
-    if (!target.length) return;
-    let targetY = target.offset().top - header;
-    $('html,body').animate({ scrollTop: targetY }, time, 'swing');
-    return false;
-  });
-
+    // PCサイズにしたときにドロワーメニューを閉じる
+    $(window).resize(function() {
+        if (window.matchMedia('(min-width: 768px)').matches) {
+            $('.js-hamburger').removeClass('active')
+            $('.js-globalMenuSp').removeClass('active')
+        }
+    });
 });

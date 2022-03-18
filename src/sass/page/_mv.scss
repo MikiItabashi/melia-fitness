@@ -3,7 +3,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: rem(68);
     @include mq('md') {
+        padding-top: rem(120);
         background-image: url(../images/mv-bg.jpg);
     }
 }

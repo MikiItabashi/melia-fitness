@@ -25,3 +25,20 @@
         line-height: 1;
     }
 }
+
+.title--left {
+    text-align: left;
+    @include mq('md') {
+        white-space: nowrap;
+        .title__en {
+            display: flex;
+            align-items: center;
+            &::after {
+                margin-left: rem(32);
+                border-top: 1px solid $color-text;
+                content: "";
+                width: 100%;
+            }
+        }
+    }
+}
