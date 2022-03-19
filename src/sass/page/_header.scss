@@ -29,7 +29,7 @@
 }
 
 .header__item+.header__item {
-    margin-left: rem(32);
+    margin-left: rem(31);
 }
 
 .header__item a {
@@ -39,7 +39,7 @@
     align-items: center;
     font-size: rem(15);
     font-family: $second-font-family;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     @include mq('md') {
         &:hover {
@@ -57,7 +57,7 @@
     max-width: rem(76);
     @include mq('md') {
         max-width: rem(130);
-        margin: 0 rem(23);
+        margin: 0 rem(18);
     }
 }
 

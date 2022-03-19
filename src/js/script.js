@@ -30,6 +30,10 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
         $('.js-hamburger').trigger('click')
     });
 
+    // 背景をクリックしたらハンバーガーメニューを閉じる
+    $('.drawer-menu__background').on('click', function(event) {
+        $('.js-hamburger').trigger('click')
+    });
     // PCサイズにしたときにドロワーメニューを閉じる
     $(window).resize(function() {
         if (window.matchMedia('(min-width: 768px)').matches) {

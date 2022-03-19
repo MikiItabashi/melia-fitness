@@ -17,9 +17,9 @@
 .campaign__box {
     background: $color-white;
     border: 1px solid $color-main;
-    padding: rem(40) rem(10);
+    padding: rem(38) rem(10) rem(43);
     @include mq('md') {
-        padding: rem(69) rem(89);
+        padding: rem(64) rem(89);
     }
 }
 
@@ -28,15 +28,15 @@
     font-weight: 600;
     font-size: rem(20);
     line-height: 1;
-    letter-spacing: 0.005em;
-    padding: rem(12) 0;
+    letter-spacing: 0.05em;
+    padding: rem(17) 0;
     text-align: center;
     border-top: 1px solid $color-main;
     border-bottom: 1px solid $color-main;
     @include mq('md') {
         font-size: rem(40);
-        letter-spacing: 0.015em;
-        padding: rem(18) 0;
+        letter-spacing: 0.15em;
+        padding: rem(27) 0;
     }
 }
 
@@ -44,7 +44,7 @@
     padding: rem(78) rem(47) 0;
     position: relative;
     @include mq('md') {
-        padding: rem(119) rem(140) 0;
+        padding: rem(112) rem(140) 0;
     }
 }
 
@@ -53,19 +53,20 @@
     position: absolute;
     content: "";
     top: rem(24);
-    right: 0;
+    right: rem(10);
     color: $color-main;
     padding: rem(7) rem(10);
     font-size: rem(14);
     line-height: 1;
-    letter-spacing: 0.005em;
+    letter-spacing: 0.05em;
     z-index: 1;
     color: $color-main;
     @include mq('md') {
         top: rem(46);
+        right: rem(108);
         padding: rem(15) rem(25);
         font-size: rem(24);
-        letter-spacing: 0.01em;
+        letter-spacing: 0.1em;
     }
 }
 
@@ -78,8 +79,8 @@
     height: 100%;
     display: inline-block;
     background-color: $color-white;
-    border: 2px solid $color-main;
-    transform: skewX(-15deg);
+    border: 1px solid $color-main;
+    transform: skewX(-9deg);
     z-index: -1;
 }
 
@@ -90,8 +91,8 @@
     z-index: 1;
     border-style: solid;
     border-color: $color-white transparent;
-    border-width: 25px 26px 0 0;
-    bottom: rem(-17);
+    border-width: 13px 15px 0 0;
+    bottom: rem(-12);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -103,14 +104,14 @@
     z-index: 0;
     border-style: solid;
     border-color: $color-main transparent;
-    border-width: 25px 25px 0 0;
-    bottom: rem(-20);
+    border-width: 13px 15px 0 0;
+    bottom: rem(-12);
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-41%);
 }
 
 .campaign__heading {
-    letter-spacing: 0.015em;
+    letter-spacing: 0.15em;
     @include mq('md') {
         font-size: rem(28);
     }
@@ -119,20 +120,29 @@
 .campaign__price {
     display: flex;
     justify-content: center;
-    margin-top: rem(10);
+    margin-top: rem(16);
     @include mq('md') {
         margin-top: 0;
         align-items: center;
+        justify-content: space-between;
     }
 }
 
 .campaign__before {
-    letter-spacing: 0.005em;
+    letter-spacing: 0.05em;
     position: relative;
-    margin-right: rem(47);
+    margin-right: rem(56);
     @include mq('md') {
+        line-height: 2;
         margin-right: rem(214);
-        font-size: 24;
+        font-size: rem(24);
+        white-space: nowrap;
+    }
+}
+
+.campaign__before span {
+    @include mq('md') {
+        display: inline-block;
     }
 }
 
@@ -185,7 +195,7 @@
     white-space: nowrap;
     @include mq('md') {
         text-align: center;
-        margin-top: rem(16);
+        margin-top: rem(10);
         font-size: rem(20);
     }
 }
@@ -195,16 +205,16 @@
     margin-bottom: rem(10);
     font-size: rem(14);
     line-height: calc(21 / 14);
-    letter-spacing: 0.005em;
-    padding: rem(5) rem(6);
+    letter-spacing: 0.05em;
+    padding: rem(3) rem(4);
     border: 1px solid $color-text;
     @include mq('md') {
         margin-bottom: 0;
         margin-right: rem(20);
         font-size: rem(18);
         line-height: calc(24 / 18);
-        letter-spacing: 0.01em;
-        padding: rem(9) rem(16);
+        letter-spacing: 0.1em;
+        padding: rem(8) rem(16);
     }
 }
 

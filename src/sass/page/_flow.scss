@@ -26,11 +26,11 @@
     }
 }
 
-.flow__item+.flow__item {
+.flow__item:not(:last-child) {
     margin-bottom: rem(40);
     @include mq('md') {
         margin-bottom: 0;
-        margin-left: rem(80);
+        margin-right: rem(80);
     }
 }
 
@@ -55,26 +55,27 @@
 }
 
 .flow__content {
-    margin-top: rem(24);
+    margin-top: rem(21);
 }
 
 .flow__step {
     text-transform: uppercase;
     color: $color-main;
     font-size: rem(16);
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
 }
 
 .flow__sub-title {
+    margin-top: rem(11);
     font-size: rem(16);
     font-weight: 600;
     font-size: rem(18);
     line-height: calc(27 / 18);
-    letter-spacing: 0.005em;
+    letter-spacing: 0.05em;
     @include mq('md') {
         font-size: rem(22);
         line-height: 1;
-        letter-spacing: 0.01em;
+        letter-spacing: 0.1em;
     }
 }
 
@@ -82,8 +83,10 @@
     margin-top: rem(8);
     font-size: rem(16);
     line-height: calc(29 / 16);
-    letter-spacing: 0.002em;
+    letter-spacing: 0.02em;
     @include mq('md') {
-        letter-spacing: 0.005em;
+        margin-top: rem(17);
+        line-height: 2;
+        letter-spacing: 0.05em;
     }
 }

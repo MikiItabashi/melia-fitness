@@ -1,6 +1,6 @@
 .faq {
-    padding-top: rem(56);
-    padding-bottom: rem(56);
+    padding-top: rem(61);
+    padding-bottom: rem(31);
     @include mq('md') {
         padding-top: rem(96);
         padding-bottom: rem(96);
@@ -12,19 +12,19 @@
 .faq__title {}
 
 .faq__items {
-    margin-top: rem(40);
+    margin-top: rem(16);
     @include mq('md') {
-        margin-top: rem(80);
+        margin-top: rem(34);
     }
 }
 
 .faq__item {
-    padding: rem(24) 0 rem(24) rem(42);
+    padding: rem(24) 0 rem(24) rem(30);
     font-size: rem(16);
     line-height: calc(29 / 16);
-    letter-spacing: 0.002em;
+    letter-spacing: 0.02em;
     @include mq('md') {
-        padding: rem(40) rem(30) rem(40) rem(80);
+        padding: rem(42) rem(37) rem(38) rem(66);
         font-size: rem(16);
         line-height: calc(32 / 16);
     }
@@ -46,6 +46,10 @@
     font-size: rem(20);
     font-family: $second-font-family;
     line-height: 1;
+    @include mq('md') {
+        top: rem(8);
+        left: rem(-40);
+    }
 }
 
 .faq__q::before {
@@ -54,7 +58,7 @@
 }
 
 .faq__a {
-    margin-top: rem(12);
+    margin-top: rem(11);
     position: relative;
     @include mq('md') {
         margin-top: rem(36);

@@ -25,7 +25,7 @@
 }
 
 .voice__item:not(:last-child) {
-    margin-bottom: rem(40);
+    margin-bottom: rem(41);
     @include mq('md') {
         margin-bottom: rem(80);
     }
@@ -71,29 +71,30 @@
     font-size: rem(18);
     font-weight: 600;
     line-height: calc(27 / 18);
-    letter-spacing: 0.005em;
+    letter-spacing: 0.05em;
     @include mq('md') {
+        margin-top: rem(-21);
         font-size: rem(24);
         line-height: calc(36 / 24);
-        letter-spacing: 0.01em;
+        letter-spacing: 0.1em;
     }
 }
 
 .voice__text {
-    margin-top: rem(12);
+    margin-top: rem(9);
     line-height: calc(29/ 16);
-    letter-spacing: 0.002em;
+    letter-spacing: 0.02em;
     @include mq('md') {
         margin-top: rem(20);
-        line-height: calc(32 / 16);
-        letter-spacing: 0.005em;
+        line-height: 2;
+        letter-spacing: 0.05em;
     }
 }
 
 .voice__info {
-    margin-top: rem(12);
+    margin-top: rem(11);
     font-size: rem(14);
-    letter-spacing: 0.005em;
+    letter-spacing: 0.05em;
     @include mq('md') {
         text-align: right;
         margin-top: rem(17);

@@ -3,11 +3,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: rem(120);
+    padding-top: rem(139);
     padding-bottom: rem(56);
     margin-top: rem(-80);
     @include mq('md') {
-        padding-top: rem(162);
+        padding-top: rem(177);
         padding-bottom: rem(96);
         background-image: url(../images/voice-bg.jpg);
     }
@@ -30,14 +30,14 @@
     }
 }
 
-.member-voice__item:nth-child(2n + 1) {
+.member-voice__item:nth-child(2n) {
     @include mq('md') {
         flex-direction: row-reverse;
     }
 }
 
 .member-voice__item:not(:last-child) {
-    margin-bottom: rem(40);
+    margin-bottom: rem(37);
     @include mq('md') {
         margin-bottom: rem(80);
     }
@@ -62,27 +62,27 @@
         object-position: center;
     }
     @include mq('md') {
-        width: 42%;
+        width: 42.5%;
     }
 }
 
 .member-voice__content {
     margin-top: rem(20);
     @include mq('md') {
-        width: 58%;
+        width: 57.5%;
         margin-top: 0;
     }
 }
 
 .member-voice__item:nth-child(2n) .member-voice__content {
     @include mq('md') {
-        padding-left: rem(71);
+        padding-right: rem(57);
     }
 }
 
 .member-voice__item:nth-child(2n + 1) .member-voice__content {
     @include mq('md') {
-        padding-right: rem(71);
+        padding-left: rem(71);
     }
 }
 
@@ -90,11 +90,11 @@
     font-weight: 600;
     font-size: rem(18);
     line-height: calc(27 / 18);
-    letter-spacing: 0.005em;
+    letter-spacing: 0.05em;
     color: $color-main;
     @include mq('md') {
         font-size: rem(24);
-        letter-spacing: 0.01em;
+        letter-spacing: 0.1em;
         line-height: calc(36 / 24);
     }
 }
@@ -103,12 +103,12 @@
     margin-top: rem(12);
     font-size: rem(14);
     line-height: calc(21 / 14);
-    letter-spacing: 0.002em;
+    letter-spacing: 0.05em;
     @include mq('md') {
         margin-top: rem(20);
         font-size: rem(16);
         line-height: calc(24 / 16);
-        letter-spacing: 0.005em;
+        letter-spacing: 0.05em;
     }
 }
 
@@ -116,11 +116,11 @@
     margin-top: rem(12);
     font-size: rem(16);
     line-height: calc(29 / 16);
-    letter-spacing: 0.002em;
+    letter-spacing: 0.04em;
     @include mq('md') {
         margin-top: rem(24);
         font-size: rem(16);
         line-height: calc(32 / 16);
-        letter-spacing: 0.005em;
+        letter-spacing: 0.05em;
     }
 }

@@ -12,7 +12,7 @@
 .access__title {}
 
 .access__body {
-    margin-top: rem(40);
+    margin-top: rem(44);
     @include mq('md') {
         margin-top: rem(80);
         display: flex;
@@ -25,7 +25,7 @@
         width: 51%;
         font-size: rem(16);
         line-height: calc(29 / 16);
-        letter-spacing: 0.002em;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -33,49 +33,58 @@
     font-weight: 600;
     font-size: rem(18);
     line-height: 1;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
     @include mq('md') {
         font-size: rem(24);
     }
 }
 
 .access__name-ja {
-    margin-top: rem(8);
+    margin-top: rem(16);
     font-size: rem(14);
     line-height: 1;
-    letter-spacing: 0.002em;
+    letter-spacing: 0.02em;
     @include mq('md') {
-        margin-top: rem(16);
+        margin-top: rem(19);
         font-size: rem(16);
-        letter-spacing: 0.01em;
+        letter-spacing: 0.1em;
     }
 }
 
 .access__address {
-    margin-top: rem(20);
+    margin-top: rem(24);
+    line-height: 1.8;
+    letter-spacing: 0.02em;
     @include mq('md') {
-        margin-top: rem(40);
+        margin-top: rem(49);
+        letter-spacing: 0.1em;
     }
 }
 
 .access__station {
-    margin-top: rem(12);
+    margin-top: rem(16);
+    letter-spacing: 0.02em;
     @include mq('md') {
-        margin-top: rem(32);
+        margin-top: rem(27);
+        letter-spacing: 0.1em;
     }
 }
 
 .access__tel {
-    margin-top: rem(12);
+    margin-top: rem(17);
+    letter-spacing: 0.02em;
     @include mq('md') {
-        margin-top: rem(40);
+        margin-top: rem(27);
+        letter-spacing: 0.1em;
     }
 }
 
 .access__time {
-    margin-top: rem(12);
+    margin-top: rem(17);
+    letter-spacing: 0.02em;
     @include mq('md') {
-        margin-top: rem(40);
+        margin-top: rem(27);
+        letter-spacing: 0.1em;
     }
 }
 
@@ -83,7 +92,7 @@
     margin: rem(40) calc(50% - 50vw) 0;
     position: relative;
     width: 100vw;
-    padding-top: 75%;
+    padding-top: 85%;
     @include mq('md') {
         padding-top: 37%;
         width: 49%;

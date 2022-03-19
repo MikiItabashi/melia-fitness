@@ -29,6 +29,10 @@ jQuery(function ($) {
 
   $('#menu a[href]').on('click', function (event) {
     $('.js-hamburger').trigger('click');
+  }); // 背景をクリックしたらハンバーガーメニューを閉じる
+
+  $('.drawer-menu__background').on('click', function (event) {
+    $('.js-hamburger').trigger('click');
   }); // PCサイズにしたときにドロワーメニューを閉じる
 
   $(window).resize(function () {

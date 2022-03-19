@@ -7,9 +7,9 @@
 
 .message__box {
     border: 1px solid $color-main;
-    padding: rem(24) rem(20);
+    padding: rem(24) rem(19);
     @include mq('md') {
-        padding: rem(64) rem(89);
+        padding: rem(54) rem(89) rem(63);
     }
 }
 
@@ -17,7 +17,7 @@
     font-family: $third-font-family;
     font-size: rem(40);
     line-height: 1;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
     color: $color-main;
     text-align: center;
     @include mq('md') {
@@ -26,10 +26,11 @@
 }
 
 .message__text {
-    margin-top: rem(16);
+    margin-top: rem(13);
     line-height: calc(29 / 16);
+    letter-spacing: 0.02em;
     @include mq('md') {
-        margin-top: rem(40);
+        margin-top: rem(31);
         line-height: calc(32 / 16);
     }
 }

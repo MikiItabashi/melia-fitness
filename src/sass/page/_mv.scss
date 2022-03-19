@@ -24,10 +24,11 @@
 
 .mv__main {
     font-size: rem(22);
-    line-height: calc(36 / 22);
+    line-height: 1.5;
+    letter-spacing: 0.1em;
     @include mq('md') {
         font-size: rem(32);
-        line-height: calc(60 / 32);
+        line-height: 1.47;
     }
 }
 

@@ -25,7 +25,7 @@
 .drawer-menu__link {
     text-transform: uppercase;
     font-family: $second-font-family;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
     list-style-type: none;
     padding: 0;
     width: 100%;
@@ -40,6 +40,7 @@
     display: block;
     padding: rem(16) 0;
     text-decoration: none;
+    letter-spacing: 0.05em;
 }
 
 .drawer-menu__sns {

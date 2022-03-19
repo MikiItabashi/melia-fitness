@@ -61,6 +61,7 @@
     font-weight: 600;
     font-size: rem(24);
     line-height: 1;
+    letter-spacing: 0.1em;
 }
 
 .profile__sns {}
@@ -68,8 +69,10 @@
 .profile__text {
     margin-top: rem(24);
     line-height: calc(29 / 16);
+    letter-spacing: 0.02em;
     @include mq('md') {
         margin-top: rem(32);
         line-height: calc(32 / 16);
+        letter-spacing: 0.05em;
     }
 }
