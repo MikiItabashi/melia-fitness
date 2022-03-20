@@ -1,7 +1,6 @@
 "use strict";
 
 jQuery(function ($) {
-  // この中であればWordpressでも「$」が使用可能になる
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     var time = 400;
@@ -40,5 +39,19 @@ jQuery(function ($) {
       $('.js-hamburger').removeClass('active');
       $('.js-globalMenuSp').removeClass('active');
     }
+  }); // ---------------
+  // GSAP
+  // ---------------
+  // $(".js-left").css("opacity", 0);
+
+  var textWrap = document.querySelectorAll('.campaign__title');
+  textWrap.forEach(function (t) {
+    return t.innerHTML = t.textContent.replace(/\S/g, '<span>$&</span>');
+  });
+  gsap.fromTo('.campaign__title span', {
+    opacity: 0
+  }, {
+    opacity: 1,
+    stagger: 0.1
   });
 });
