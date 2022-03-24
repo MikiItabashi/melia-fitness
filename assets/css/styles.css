@@ -1609,6 +1609,7 @@ nav.drawer-menu.active + .drawer-menu__background {
 
 .header__item {
   height: inherit;
+  visibility: hidden;
 }
 
 .header__item + .header__item {
@@ -1650,6 +1651,7 @@ nav.drawer-menu.active + .drawer-menu__background {
   width: 100%;
   max-width: 76px;
   max-width: 4.75rem;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -1669,6 +1671,7 @@ nav.drawer-menu.active + .drawer-menu__background {
           align-items: center;
   margin-right: 50px;
   margin-right: 3.125rem;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -1943,6 +1946,7 @@ nav.drawer-menu.active + .drawer-menu__background {
   font-size: 1.375rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -1980,6 +1984,7 @@ nav.drawer-menu.active + .drawer-menu__background {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.5;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
