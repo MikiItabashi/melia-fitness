@@ -47,16 +47,78 @@ jQuery(function($) {
     // GSAP
     // ---------------
 
-    // $(".js-left").css("opacity", 0);
-    var textWrap = document.querySelectorAll('.campaign__title');
-    textWrap.forEach((t) => (
-        t.innerHTML = t.textContent.replace(/\S/g, '<span>$&</span>')
-    ));
+    window.addEventListener('load', revealAnim);
 
-    gsap.fromTo('.campaign__title span', {
-        opacity: 0,
-    }, {
-        opacity: 1,
-        stagger: 0.1,
+    function revealAnim() {
+        const TLTOP = gsap.timeline();
+
+        // メインビューのアニメーション
+        TLTOP
+            .from('.mv__main', {
+                autoAlpha: 0,
+                y: 50,
+                delay: 0.2,
+            })
+            .from('.mv__lead', {
+                autoAlpha: 0,
+                y: 50,
+            }, '-=0.2')
+            .from('.header__logo', {
+                autoAlpha: 0,
+                y: 50,
+            }, '-=0.2')
+            .from('.header__btn', {
+                autoAlpha: 0,
+                y: 50,
+            }, '<')
+            .from('.header__item', {
+                autoAlpha: 0,
+                y: 50,
+                duration: 0.4,
+                stagger: 0.1,
+            }, '-=0.2')
+    };
+
+    gsap.from('.problem__item', {
+        autoAlpha: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".problem__items",
+            start: "top 80%",
+        }
+    });
+
+    $(".title--left .title__en").css("width", 0);
+    $(".js-fade").css("opacity", 0);
+
+    ScrollTrigger.batch(".title--left .title__en", {
+        onEnter: (elements, triggers) => {
+            gsap.set(elements, {
+                width: 0,
+            });
+            gsap.to(elements, {
+                width: '100%',
+                duration: 1,
+            });
+        },
+        start: "top 80%",
+        once: true,
+    });
+
+
+    ScrollTrigger.batch(".js-fade", {
+        onEnter: (elements, triggers) => {
+            gsap.set(elements, {
+                autoAlpha: 0,
+                y: 50,
+            });
+            gsap.to(elements, {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.5,
+            });
+        },
+        start: "top 80%",
+        once: true,
     });
 });
